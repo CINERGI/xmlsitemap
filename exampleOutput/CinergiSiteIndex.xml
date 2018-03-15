@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<?xml-stylesheet type="text/xsl" href="xml-sitemap.xsl"?> -->
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+<loc>http://cinergi.sdsc.edu/geoportal/cinergisitemap0.xml</loc>
+<lastmod>2018-03-15 15:50:28.982000</lastmod>
+</sitemap>
+<sitemap>
+<loc>http://cinergi.sdsc.edu/geoportal/cinergisitemap1.xml</loc>
+<lastmod>2018-03-15 15:50:29.029000</lastmod>
+</sitemap>
+<sitemap>
+<loc>http://cinergi.sdsc.edu/geoportal/cinergisitemap2.xml</loc>
+<lastmod>2018-03-15 15:50:29.081000</lastmod>
+</sitemap>
+<sitemap>
+<loc>http://cinergi.sdsc.edu/geoportal/cinergisitemap3.xml</loc>
+<lastmod>2018-03-15 15:50:29.124000</lastmod>
+</sitemap>
+<sitemap>
+<loc>http://cinergi.sdsc.edu/geoportal/cinergisitemap4.xml</loc>
+<lastmod>2018-03-15 15:50:29.166000</lastmod>
+</sitemap>
+</sitemapindex>
