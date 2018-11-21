@@ -1,0 +1,39 @@
+
+get http://cinergi.sdsc.edu/geoportal/opensearch?&from=1&size=0&f=atom
+opensearch:totalResults = TotalRecords
+
+create sitemap indexfile
+open sitemap index file for write
+
+loopnumber=1
+n = 0
+
+loop: until n>=TotalRecords
+
+open new sitemap file  name 'sitemap&loopnumber(asstring).xml)
+put xslt for xml to html in sitemap header
+
+add current sitemap file link to sitemap index file
+
+strt = 1 //starting record number
+size = ts
+ts = 10000 //do 10k at a time. ElasticSearch works with this.
+
+records = http://cinergi.sdsc.edu/geoportal/opensearch?&from={strt}&size={ts}&f=atom
+
+transform response to sitemap xml and write to file;
+
+close current sitemap file
+
+strt=strt+ts //move start point forward
+
+n = n + ts //total number of records added to sitemaps
+
+loopnumber = loopnumber + 1;
+
+end loop //over all records
+
+close sitemap index file
+
+if n > 0 return 'urls in sitemap': name	
+	else no sitemap created
